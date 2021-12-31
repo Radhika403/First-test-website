@@ -2,70 +2,63 @@
 <!-- also external css - styling in other file -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Website 1</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Website 1</title>
 
-    <!-- EXTERNAL CSS DONE USNG LINK TAG -->
-    <link rel='stylesheet' href="style.css"> <!-- if folder was diff filename ke aage path bhi dena padta-->
+        <!-- EXTERNAL CSS DONE USNG LINK TAG -->
+        <link rel='stylesheet' href="style.css"> <!-- if folder was diff filename ke aage path bhi dena padta-->
+    </head>
 
+    <body>
+        <header>
+            <h1> DEV 101 </h1>
+            <nav>
+                <!-- we have to style it so that it comes in one line write now it coes under heading in bullets-->
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/HTML"> HTML </a></li>
+                    <li><a href='https://en.wikipedia.org/wiki/CSS'> CSS </a></li>
+                    <li><a href='https://en.wikipedia.org/wiki/JavaScript'> JAVASCRIPT</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <section>
+            <!-- here paath or relative path does'nt work so use ./ goes 1 folder up or../ goes 2 folder up select-->
+            <img src="./Pictures/lap.jpeg" class = 'showcaseImg' alt='picture of a laptop'>
+        </section>
 
-</head>
+        <article>
+            <div class='container'>
+                <img src='./Pictures/html.png'>
+                <h1> HTML </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat voluptas iure quas quaerat sequi provident nihil inventore nemo, tenetur, repellat magnam numquam temporibus cumque, rerum ut odit quasi officia.
+                </p>
+            </div>
 
-<body>
-    <header>
-        <h1> DEV 101 </h1>
-        <nav>
-            <!-- we have to style it so that it comes in one line write now it coes under heading in bullets-->
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/HTML"> HTML </a></li>
-                <li><a href='https://en.wikipedia.org/wiki/CSS'> CSS </a></li>
-                <li><a href='https://en.wikipedia.org/wiki/JavaScript'> JAVASCRIPT</a></li>
-            </ul>
+            <div class='container'>
+                <img src='./Pictures/css.png'>
+                <h1> CSS </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam quasi ab enim, necessitatibus dolorum eius eveniet quisquam optio? Quis officia dolor nam ipsum dignissimos ad eveniet necessitatibus repellendus illum!
+                </p>
+            </div>
 
-        </nav>
-    </header>
+            <div class='container'>
+                <img src='./Pictures/icon.png'>
+                <h1 class='js'> JavaScript </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti esse quisquam quasi reiciendis cum repudiandae possimus fuga quia consectetur, commodi ea explicabo doloremque! Ratione assumenda molestiae numquam nostrum non.
+                </p>
+            </div>
+        </article>
 
-    <section>
-        <!-- here paath or relative path does'nt work so use ./ goes 1 folder up or../ goes 2 folder up select-->
-        <img src="./Pictures/lap.jpeg" class = 'showcaseImg' alt='picture of a laptop'>
-    </section>
-
-    <article>
-        <div class='container'>
-            <img src='./Pictures/html.png'>
-            <h1> HTML </h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse fugiat voluptas iure quas quaerat sequi provident nihil inventore nemo, tenetur, repellat magnam numquam temporibus cumque, rerum ut odit quasi officia.
-            </p>
-        </div>
-
-        <div class='container'>
-            <img src='./Pictures/css.png'>
-            <h1> CSS </h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam quasi ab enim, necessitatibus dolorum eius eveniet quisquam optio? Quis officia dolor nam ipsum dignissimos ad eveniet necessitatibus repellendus illum!
-            </p>
-        </div>
-
-        <div class='container'>
-            <img src='./Pictures/icon.png'>
-            <h1 class='js'> JavaScript </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti esse quisquam quasi reiciendis cum repudiandae possimus fuga quia consectetur, commodi ea explicabo doloremque! Ratione assumenda molestiae numquam nostrum non.
-            </p>
-        </div>
-
-    </article>
-
-    <footer>
-        <h3>  &copy Pepcoding 2022 </h3>
-        <!-- &copy is used for the copyright symbol-->
-    </footer>
-    
-</body>
-
+        <footer>
+            <h3>  &copy Pepcoding 2022 </h3>
+            <!-- &copy is used for the copyright symbol-->
+        </footer>
+    </body>
 </html>
